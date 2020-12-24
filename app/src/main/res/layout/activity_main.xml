@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/ute"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ute"
+        />
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_below="@+id/ute"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Hữu Thắng"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/eUser"
+        android:layout_below="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="5dp"
+        android:elevation="5dp"
+        android:hint="Địa chỉ Email của bạn"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textColor="#fff" />
+    <EditText
+        android:id="@+id/ePass"
+        android:layout_below="@+id/eUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/ic_pass"
+        android:drawablePadding="5dp"
+        android:elevation="5dp"
+        android:hint="Nhập Mật Khẩu "
+        android:inputType="text"
+        android:padding="5dp"
+        android:textColor="#fff" />
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@+id/ePass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="text"
+        android:background="@color/blue"
+        android:text="Đăng Nhập"
+        android:textSize="16sp"
+        android:textColor="#000" />
+
+
+</RelativeLayout>
